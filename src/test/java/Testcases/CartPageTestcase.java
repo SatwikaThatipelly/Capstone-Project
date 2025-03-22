@@ -17,8 +17,7 @@ public class CartPageTestcase extends BaseClass {
 		acp=new AddToCartPage(driver);
 		//scrolldown(0,20);
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		// choo
-		acp.laptops();
+		acp.phone();
 		AlertHandling();
 		acp.backto();
 		acp.cartpage();

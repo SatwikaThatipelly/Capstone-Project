@@ -21,7 +21,6 @@ public class SignUpSetpDef extends BaseClass {
     @When("the user enters valid username and password")
     public void the_user_enters_valid_username_and_password() {
         signUpPage.userDetails(username, password);
-        signUpPage.SignUpButton();
     }
     @When("clicks the signup button")
     public void clicks_the_signup_button() {

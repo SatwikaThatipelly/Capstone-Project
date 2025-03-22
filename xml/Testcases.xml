@@ -6,7 +6,7 @@
 		<classes>
 			<class name="Testcases.SignUpPageTestcase" />
 			<class name="Testcases.LoginPageTestcase" />
-			<class name="Testcases.CartPageTestcase" />
+			<class name="Testcases.CartPageTestcase"/>
 			<class name="myrunner.SignUpTestng"/>
 		</classes>
 	</test> <!--Test -->
