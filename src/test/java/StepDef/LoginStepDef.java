@@ -9,6 +9,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import java.io.IOException;
 
+import com.aventstack.extentreports.Status;
+
 public class LoginStepDef extends BaseClass {
     LogInPage lip;
     
@@ -36,7 +38,7 @@ public class LoginStepDef extends BaseClass {
         // For example, you might check if a success message is displayed
         AlertHandling(); // Handle any alerts if necessary
         System.out.println("User  login success");
-        ExtentReport.createTest("Valid login").info("User enters valid data");
+        ExtentReport.createTest("LogIn").log(Status.PASS,"LogIn success");
     }
 
     @After
@@ -44,7 +46,6 @@ public class LoginStepDef extends BaseClass {
         Thread.sleep(2000); // Optional: Wait for 2 seconds before quitting
         if (driver != null) {
             driver.quit(); // Close the browser
-            ExtentReport.createTest("login success").pass("Login is complete");
             ExtentReport.getInstance().flush();
         }
     }

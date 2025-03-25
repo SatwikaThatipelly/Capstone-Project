@@ -1,5 +1,7 @@
 package StepDef;
 
+import com.aventstack.extentreports.Status;
+
 import Base.BaseClass;
 import Base.ExtentReport;
 import Pages.SignUpPagePf;
@@ -30,6 +32,7 @@ public class SignUpSetpDef extends BaseClass {
     public void the_user_should_see_a_success_message() {
     	AlertHandling();
         System.out.println("StepDef success");
+        ExtentReport.createTest("SignUp").log(Status.PASS,"SignUp success");
     }
 
     @After

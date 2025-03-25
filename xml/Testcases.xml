@@ -4,10 +4,12 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="Testcases.SignUpPageTestcase" />
+			<class name="myrunner.SignUpTestng"/>
 			<class name="Testcases.LoginPageTestcase" />
 			<class name="Testcases.CartPageTestcase"/>
-			<class name="myrunner.SignUpTestng"/>
+			<class name="Testcases.AddingMultipleElementsTestcase"/>
+			<class name="Testcases.CheckOutPageTestcase"/>
+			<class name="Testcases.LoginInvalidData"/>
 		</classes>
 	</test> <!--Test -->
 </suite> <!--

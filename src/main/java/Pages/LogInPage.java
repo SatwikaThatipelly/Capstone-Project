@@ -21,9 +21,9 @@ public class LogInPage {
 	}
 	public void loginDetails(String username,String Password) throws InterruptedException {
 		driver.findElement(userName).sendKeys(username);
-		Thread.sleep(2000);		
+		//Thread.sleep(2000);		
 		driver.findElement(password).sendKeys(Password);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 	}
 	public void loginButton() {
 		driver.findElement(loginButton).click();

@@ -2,14 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="myrunner.SignUpTestng">
+      <class name="Testcases.CartPageTestcase">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="traedown"/>
+          <include name="Tc1"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- myrunner.SignUpTestng -->
+      </class> <!-- Testcases.CartPageTestcase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

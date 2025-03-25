@@ -2,6 +2,7 @@ package Base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -20,11 +21,19 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import com.google.common.io.Files;
 
-public class BaseClass {
+import Utilities.ExcelReader;
+
+public class BaseClass  {
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public String username;
 	public String password;
+	public String Name;
+	public String Country;
+	public String City;
+	public String Creditcard;
+	public String Month;
+	public String Year;
 	public String url;
 	//reading data from properties file.
 	public void readData() throws IOException {
@@ -40,6 +49,12 @@ public class BaseClass {
 		readData();
 		username=prop.getProperty("username");
 		password=prop.getProperty("password");
+		Name=prop.getProperty("name");
+		Country=prop.getProperty("country");
+		City=prop.getProperty("city");
+		Creditcard=prop.getProperty("creditcard");
+		Month=prop.getProperty("month");
+		Year=prop.getProperty("year");
 		url=prop.getProperty("url");
 		if(browser.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
