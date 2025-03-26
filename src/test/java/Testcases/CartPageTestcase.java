@@ -11,19 +11,19 @@ public class CartPageTestcase extends BaseClass {
 	AddToCartPage acp;
 	@Test
 	public void Tc1() throws IOException, InterruptedException {
-		acp=new AddToCartPage(driver);
-		// selecting the category laptops and adding one of the products to the cart.
-		acp.phone();
+		acp = new AddToCartPage(driver);
+		// selecting the category phones and adding one of the products to the cart.
+		acp.laptops();
 		// An alert appears when we add a product to cart we handle that alert.
 		AlertHandling();
-		//Navigating to home page.
+		// Navigating to home page.
 		acp.backto();
-		//viewing the cart page.
+		// viewing the cart page.
 		acp.cartpage();
-		//Waiting until the elements are visible in cart page.
+		// Waiting 
 		Thread.sleep(2000);
-		//taking a screenshot.
+		// taking a screenshot.
 		screenshot();
-		ExtentReport.createTest("AddToCartPage").log(Status.PASS,"Cart pass");
+		ExtentReport.createTest("AddToCartPage").log(Status.PASS, "Cart pass");
 	}
 }
