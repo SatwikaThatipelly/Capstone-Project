@@ -33,6 +33,7 @@ public class CheckOutPageTestcase extends BaseClass {
 		cop.clickPlaceOrder();
 		// entering the user details.
 		cop.enterPurchaseDetails(Name, Country, City, Creditcard, Month, Year);
+		AlertHandling();
 		// clicking on purchase button
 		cop.confirmPurchase();
 		//Taking a screenshot.

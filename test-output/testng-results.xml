@@ -1,27 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T09:54:10 IST" name="Default suite" finished-at="2025-03-26T09:54:28 IST" duration-ms="17981">
+  <suite started-at="2025-03-26T10:11:09 IST" name="Suite" finished-at="2025-03-26T10:12:57 IST" duration-ms="107647">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.SignUpTestng@16612a51]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.SignUpTestng@47c81abf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-26T09:54:10 IST" name="Default test" finished-at="2025-03-26T09:54:28 IST" duration-ms="17981">
-      <class name="myrunner.SignUpTestng">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myrunner.SignUpTestng@16612a51]" started-at="2025-03-26T09:54:10 IST" name="setUpClass" finished-at="2025-03-26T09:54:11 IST" duration-ms="794" status="PASS">
+    <test started-at="2025-03-26T10:11:09 IST" name="Test" finished-at="2025-03-26T10:12:57 IST" duration-ms="107647">
+      <class name="Testcases.CheckOutPageTestcase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testcases.CheckOutPageTestcase@6ca18a14]" started-at="2025-03-26T10:12:25 IST" name="setup" finished-at="2025-03-26T10:12:29 IST" duration-ms="4295" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7ebe2e47]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Tc1()[pri:0, instance:Testcases.CheckOutPageTestcase@6ca18a14]" started-at="2025-03-26T10:12:29 IST" name="Tc1" finished-at="2025-03-26T10:12:35 IST" duration-ms="6129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc1 -->
+        <test-method signature="checkout()[pri:0, instance:Testcases.CheckOutPageTestcase@6ca18a14]" started-at="2025-03-26T10:12:35 IST" name="checkout" finished-at="2025-03-26T10:12:40 IST" duration-ms="4882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="traedown()[pri:0, instance:Testcases.CheckOutPageTestcase@6ca18a14]" started-at="2025-03-26T10:12:40 IST" name="traedown" finished-at="2025-03-26T10:12:43 IST" duration-ms="3083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traedown -->
+      </class> <!-- Testcases.CheckOutPageTestcase -->
+      <class name="Testcases.AddingMultipleElementsTestcase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testcases.AddingMultipleElementsTestcase@478db956]" started-at="2025-03-26T10:12:06 IST" name="setup" finished-at="2025-03-26T10:12:10 IST" duration-ms="3994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Tc1()[pri:0, instance:Testcases.AddingMultipleElementsTestcase@478db956]" started-at="2025-03-26T10:12:10 IST" name="Tc1" finished-at="2025-03-26T10:12:21 IST" duration-ms="11452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc1 -->
+        <test-method is-config="true" signature="traedown()[pri:0, instance:Testcases.AddingMultipleElementsTestcase@478db956]" started-at="2025-03-26T10:12:21 IST" name="traedown" finished-at="2025-03-26T10:12:25 IST" duration-ms="3061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traedown -->
+      </class> <!-- Testcases.AddingMultipleElementsTestcase -->
+      <class name="Testcases.LoginInvalidData">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testcases.LoginInvalidData@c667f46]" started-at="2025-03-26T10:12:43 IST" name="setup" finished-at="2025-03-26T10:12:47 IST" duration-ms="4446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginInvalid()[pri:0, instance:Testcases.LoginInvalidData@c667f46]" started-at="2025-03-26T10:12:47 IST" name="LoginInvalid" finished-at="2025-03-26T10:12:54 IST" duration-ms="6365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalid -->
+        <test-method is-config="true" signature="traedown()[pri:0, instance:Testcases.LoginInvalidData@c667f46]" started-at="2025-03-26T10:12:54 IST" name="traedown" finished-at="2025-03-26T10:12:57 IST" duration-ms="3107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traedown -->
+      </class> <!-- Testcases.LoginInvalidData -->
+      <class name="Testcases.CartPageTestcase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testcases.CartPageTestcase@13d9cbf5]" started-at="2025-03-26T10:11:48 IST" name="setup" finished-at="2025-03-26T10:11:53 IST" duration-ms="4162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Tc1()[pri:0, instance:Testcases.CartPageTestcase@13d9cbf5]" started-at="2025-03-26T10:11:53 IST" name="Tc1" finished-at="2025-03-26T10:12:01 IST" duration-ms="8664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc1 -->
+        <test-method is-config="true" signature="traedown()[pri:0, instance:Testcases.CartPageTestcase@13d9cbf5]" started-at="2025-03-26T10:12:01 IST" name="traedown" finished-at="2025-03-26T10:12:06 IST" duration-ms="4743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traedown -->
+      </class> <!-- Testcases.CartPageTestcase -->
+      <class name="myrunner.SignUpTestng">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myrunner.SignUpTestng@47c81abf]" started-at="2025-03-26T10:11:09 IST" name="setUpClass" finished-at="2025-03-26T10:11:10 IST" duration-ms="827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6231f77a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.SignUpTestng@16612a51]" started-at="2025-03-26T09:54:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-26T09:54:28 IST" duration-ms="16733" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myrunner.SignUpTestng@47c81abf]" started-at="2025-03-26T10:11:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-26T10:11:28 IST" duration-ms="17593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +125,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myrunner.SignUpTestng@16612a51]" started-at="2025-03-26T09:54:28 IST" name="tearDownClass" finished-at="2025-03-26T09:54:28 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myrunner.SignUpTestng@47c81abf]" started-at="2025-03-26T10:11:28 IST" name="tearDownClass" finished-at="2025-03-26T10:11:28 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- myrunner.SignUpTestng -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Testcases.LoginPageTestcase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testcases.LoginPageTestcase@389b0789]" started-at="2025-03-26T10:11:28 IST" name="setup" finished-at="2025-03-26T10:11:32 IST" duration-ms="4486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPageMethod()[pri:0, instance:Testcases.LoginPageTestcase@389b0789]" started-at="2025-03-26T10:11:32 IST" name="LoginPageMethod" finished-at="2025-03-26T10:11:45 IST" duration-ms="12959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageMethod -->
+        <test-method is-config="true" signature="traedown()[pri:0, instance:Testcases.LoginPageTestcase@389b0789]" started-at="2025-03-26T10:11:45 IST" name="traedown" finished-at="2025-03-26T10:11:48 IST" duration-ms="3030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traedown -->
+      </class> <!-- Testcases.LoginPageTestcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
